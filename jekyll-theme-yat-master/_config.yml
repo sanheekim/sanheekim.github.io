@@ -24,9 +24,9 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@domain.com
-author: GitHub User
+title: Be Happy, Developer SH!
+email: sanheekim526@gmail.com
+author: sanheekim
 
 # Copyright setting
 # You can use any html code, currently below placeholders are available:
@@ -184,11 +184,11 @@ yat:
 
 # Disqus comments
 # disqus:
-#   shortname: "Your Disqus username"
+#   shortname: "SH"
 
 # Gitment comments
 # gitment:
-#   username: "Your GitHub username"
+#   username: "sanheekim"
 #   repo: "The repo to store comments"
 #   client_id: "Your client ID"
 #   client_secret: "Your client secret"
