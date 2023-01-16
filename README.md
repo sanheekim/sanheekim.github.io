@@ -1,53 +1,78 @@
-# accent
+mediator
+========
 
-#### [Demo & Documentation](http://ankitsultana.com/accent)
+A medium inspired Jekyll blog theme. The basic idea came from the Ghost theme
+[Readium 2.0](http://www.svenread.com/readium-ghost-theme/). I use mediator on my own blog [The Base](http://blog.base68.com).
 
-### Installation
+Screenshots
+--------
+![screenshot](/assets/images/screenshot1.jpg)
+![screenshot](/assets/images/screenshot2.jpg)
+![screenshot](/assets/images/screenshot3.jpg)
 
-I'd strongly recommend you to fork [accent](http://github.com/bk2dcradle/accent) and use the "upstream" strategy described on [this page](https://help.github.com/articles/fork-a-repo/) to
-keep accent up to date.
+Features
+-------
+* Fully Responsive layout
+* Use header images in articles, if you want to (add tag "image" and url to the image in the front matter section of a post)
+* Minimal design
+* Featured article support
+* FontAwesome implemented for easy use of icons fonts
+* Free & Open Source Font usage
 
-If you don't want to do that, just clone [accent](http://github.com/bk2dcradle/accent) and use
-
-```bash
-bundle exec jekyll serve
-```
-in the root of the accent directory, or, simply [download](https://github.com/bk2dcradle/accent/archive/gh-pages.zip) accent.
-
-### Customization
-
-You can edit the variables in `_config.yml` as per your needs. Edit only the variables under the section marked *User Settings*.
-
-Most of the variables are self explanatory. Notes about few of the non obvious ones:
-
-1. You can change the **hex value** of the variable `$accent-color` in `_sass/_style.scss` to any color value that you want. This will change the accent of the theme.
-
-2. Set `intro` to `true` to reveal a short bio section on the index page.
-
-3. Setting `about_footer` to *true* or *false* will turn the `about` section at the bottom of every post to *on* or *off* respectively.
-
-4. `description` is the summary that will show up in places like facebook thumbnails,
-twitter cards and google search results.
-
-
-*Note:* Don't change any variable under *Build Settings*.
-
+Getting Started
 ---
+- [Fork this repository](https://github.com/dirkfabisch/mediator)
+- Clone it: `git clone https://github.com/YOUR-USER/mediator`
+- Install the requried gems ([GitHub Pages](https://github.com/github/pages-gem), [Bourbon](https://github.com/thoughtbot/bourbon) and [Jekyll](https://github.com/jekyll/jekyll), [Jemoji](https://github.com/jekyll/jemoji)): `bundle install`
+- Run the jekyll server: `bundle exec jekyll serve`
 
-### Usage
+You should have a server up and running locally at <http://localhost:4000>.
 
-* To create a new post, simply save the `.markdown` file in the `_posts` directory in the format.
+Configuration
+-----
+
+The main settings happen in side of the _config.yml file:
+
+### Site
+
+Main settings for the site
+
+* **title**: name of your site
+* **description**: description of your site
+* **logo**: small logo for the site (300x * 300x)
+* **cover**: large background image on the index page
+
+* **name**: name site owner
+* **email**: mail address of the site owner
+* **author**: author name
+* **author_image**: small image of author (300x * 300px)
+* **disqus**: add a disqus forum for your post
+
+### Social
+
+The template allows to add all major social platforms to your site.
+Fill the the form for each platform. If you leave the share_* entries empty, the sharing buttons below a post are not shown.  If you leave the **url** and **desc** empty the icons are not shown on the index page, but the share icons on the article pages remains untouched (Thanks to [Phil](https://github.com/philsturgeon))
+
+* **icon**:	name of social platform (must match a name of [font-awsome](http://fortawesome.github.io/Font-Awesome/) icon set )
+* **url**:	url of your account
+* **desc**: slogan of the platform
+* **share_url**: share url
+* **share_title**: first part of url for the title
+* **share_link**: second part of the share url for the link to the post
+
+The Liquid template engine will magical combine the different parts to a share url.
 
 ```
-year-month-day-name-of-the-file.markdown
-```
+http://twitter.com/share?text=post_title&amp;url=post_url
+````
 
-* For Syntax highlighting, accent uses *Rouge* which is the default highlighter in Jekyll 3 and above. If you don't know how to highlight a code block, [refer](http://jekyllrb.com/docs/templates/).
+See [_config.yml](https://github.com/dirkfabisch/mediator/blob/master/_config.yml) for more examples.
 
-* To set up Google Analytics tracking id, just set the `tracking_id` variable in `_config.yml`.
+Licensing
+---------
 
----
+[MIT](https://github.com/dirkfabisch/mediator/blob/master/LICENCE) with no added caveats, so feel free to use this on your site without linking back to me or using a disclaimer or anything silly like that.
 
-### License
-
-[MIT](https://github.com/bk2dcradle/accent/blob/gh-pages/LICENSE). Copyright &copy; [Ankit Sultana](http://twitter.com/AnkitSultana)
+Contact
+-------
+I'd love to hear from you at [@dirkfabisch](https://twitter.com/dirkfabisch). Feel free to open issues if you run into trouble or have suggestions. Pull Requests always welcome.
