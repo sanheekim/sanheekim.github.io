@@ -3,7 +3,7 @@ published: false
 ---
 ## Welcome to my development blog!
 
-[Click Here](itisenjoyable.tistory.com/ "Last Blog")
+[👍Click Here👍](itisenjoyable.tistory.com/ "Last Blog")
 
 Above one is my last development blog url between 2019 and 2022.
 
