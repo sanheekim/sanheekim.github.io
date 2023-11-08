@@ -7,6 +7,7 @@ gems:
 title: "Sanhee"
 description: > # this means to ignore newlines until "email:"
    The developer who enjoys life everyday.
+   A Jekyll theme - Medium inspired
 
 email: sanheekim526@gmail.com
 #blog logo
@@ -61,3 +62,9 @@ social:
 #    share_url:
 #    share_title:
 #    share_link:
+
+# Build settings
+# theme: minima
+remote_theme: "dirkfabisch/mediator"
+plugins:
+  - jekyll-feed
