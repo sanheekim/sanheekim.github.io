@@ -1,7 +1,7 @@
 # Build settings
 gems:
   - jemoji
-  - jekyll-paginate
+  #- jekyll-paginate
 
 # Site settings
 title: "Sanhee"
