@@ -1,5 +1,9 @@
 # The Site Configuration
 
+# assets/dist가 없는데 참조해서 생기는 404에러 해결
+include:
+ - _javascript
+
 # Import the theme
 theme: jekyll-theme-chirpy
 
